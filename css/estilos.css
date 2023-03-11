@@ -1,0 +1,115 @@
+/* hoja de estilo en cascada
+selector{
+    propiedad; valor;
+}*/
+/*
+selectorDeClass{
+    propiedad: valor;
+    propiedad: valor;
+
+selector universal
+*{ 
+    propiedad:valor;
+}   
+*/
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+/*selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/*estilos del body*/
+body{
+    height: 100vh;
+    background-color: gray;
+}
+main{
+    background-color: rgb(73, 137, 137);
+    height: 50vh;
+}
+.mainGaleria{
+    height: 110vh;
+}
+.mainHistoria{
+    height: 70vh
+}
+.mainNosotros{
+    height: 70vh
+}
+
+.box{
+    background-color: blueviolet;
+    /*width: 50px; /*medida absoluta mide lo mismo sin importar en que pantalla se vea*/
+    /*height: 200px;*/
+    /*width: 50%; /*medida relativa, se adapta a la pantalla del padre*/
+    /*height: 30vh; funciona solo si el padre tiene asignado un alto sino no
+    width: 200px;*/
+    width: 25%;
+    height: 50%;
+    margin: 10px;
+}
+
+/*estilados del header*/
+header{
+    background-color: pink;
+    background-color: aqua;
+
+}
+
+.contenedorLogo .logo{
+    width: 100px;
+}
+
+.logo{
+    width: 100px !important;
+}
+.listaNavegacion{
+    list-style: none;
+    margin: 10px;
+}
+.linkNavegacion{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+/*esta clase tiene el color principal de la pagina*/
+.colorFondoPrincipal{
+    background-color:rgb(47, 98, 153);
+}
+/*estilados seccion principal del index*/
+.seccionPrincipalIndex{
+    background-color: rgb(151, 158, 158);
+    font-size: 20px;
+}
+.primerParrafo{
+    color: red;
+    font-size: 30px;
+}
+/*estilados seccion noticias del index*/
+#seccionNoticias{
+    background-color: rgb(112, 16, 9);
+}
+
+/*regla de padres e hijos*/
+
+/*estilos centrados de texto*/
+.textoCentrado{
+    text-align: center;
+}
+
+/*main de la seccion contacto*/
+.imagenFondo{
+    height: 70vh;
+    background-image: url("../assets/img/Viajes2.jpeg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.imagenesGaleria{
+    width: 500px;
+}
