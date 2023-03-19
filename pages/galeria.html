@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria - Viajes Julian</title>
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <!--estilos-->
-    <link rel="stylesheet" href="../css/estilos.css">
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galeria - Viajes Julian</title>
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <!--Bostrap-->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <!--estilos-->
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body>
+    <header class="container-fluid bg-secondary">
 
         <div class="contenedorLogo">
             <img class="logo" src="../assets/img/aviation_logo-22.jpg" alt="Logo de Viajes Julian">
@@ -46,7 +48,7 @@
 
 
     </header>
-    <main class="mainGaleria">
+    <main class="mainGaleria container bg-danger.bg-gradient">
         <!--nuestra galeria-->
         <h1>Imagenes de los mejores viajes</h1>
         <img class="imagenesGaleria" src="../assets/img/Galeria1.jpg" alt="Foto de Galeria1">
@@ -54,13 +56,9 @@
         <img class="imagenesGaleria" src="../assets/img/Galeria3.jpg" alt="Foto de Galeria3">
         <img class="imagenesGaleria" src="../assets/img/Galeria4.jpg" alt="Foto de Galeria4"> 
         <img class="imagenesGaleria" src="../assets/img/Galeria5.jpg" alt="Foto de Galeria5">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
 
     </main>
-    <footer class="colorFondoPrincipal">
+    <footer class="colorFondoPrincipal container-fluid bg-secondary">
         <!--redes sociales-->
         <div>
             <a href="https://www.instagram.com/" target="_blank">Instagram</a>
@@ -74,5 +72,7 @@
 
 
     </footer>
+    <!--js de Bustrap-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

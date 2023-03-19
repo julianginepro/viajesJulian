@@ -23,16 +23,21 @@ selector universal
 }
 /*estilos del body*/
 body{
-    height: 100vh;
+
     background-color: gray;
+    
 }
 main{
     background-color: rgb(73, 137, 137);
-    height: 50vh;
+    
+}
+.mainIndex{
+    height: 80vh
 }
 .mainGaleria{
     height: 110vh;
 }
+
 .mainHistoria{
     height: 70vh
 }
@@ -41,21 +46,27 @@ main{
 }
 
 .box{
-    background-color: blueviolet;
+    background-color: rgb(220, 15, 0);
     /*width: 50px; /*medida absoluta mide lo mismo sin importar en que pantalla se vea*/
     /*height: 200px;*/
     /*width: 50%; /*medida relativa, se adapta a la pantalla del padre*/
     /*height: 30vh; funciona solo si el padre tiene asignado un alto sino no
     width: 200px;*/
-    width: 25%;
-    height: 50%;
-    margin: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    display: inline-block;
 }
 
+.box:hover{
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+}
 /*estilados del header*/
 header{
     background-color: pink;
-    background-color: aqua;
+    background-color: rgb(104, 3, 3);
 
 }
 
@@ -66,14 +77,17 @@ header{
 .logo{
     width: 100px !important;
 }
-.listaNavegacion{
+ul{
     list-style: none;
+}
+.listaNavegacion{
     margin: 10px;
 }
 .linkNavegacion{
+    display: inline-block;
     text-decoration: none;
-    color: black;
-    font-size: 20px;
+    color: rgb(237, 39, 39);
+    font-size: 1.5rem;
 }
 /*esta clase tiene el color principal de la pagina*/
 .colorFondoPrincipal{
@@ -88,9 +102,11 @@ header{
     color: red;
     font-size: 30px;
 }
+    
 /*estilados seccion noticias del index*/
 #seccionNoticias{
     background-color: rgb(112, 16, 9);
+    height: 40vh;
 }
 
 /*regla de padres e hijos*/
@@ -112,4 +128,19 @@ header{
 
 .imagenesGaleria{
     width: 500px;
+}
+
+a:link{
+    background-color: rgb(62, 25, 25);
+    color:rgba(0, 0, 0, 0.595)
+}
+a:active{
+    background-color: rgb(251, 255, 0);
+    color: rgb(104, 3, 3);
+}
+a:hover{
+    font-weight: bold;
+    padding: 20px;
+    background-color: brown;
+    color: rgb(0, 0, 0); 
 }

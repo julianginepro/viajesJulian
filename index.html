@@ -7,18 +7,20 @@
         <title>Viajes Julian</title>
         <!--favicon-->
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <!--Bostrap-->
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
         <!--estilos-->
         <link rel="stylesheet" href="./css/estilos.css">
     </head>
     <body>
         <!--esta es la cabecera-->
-        <header class="colorFondoPrincipal altoHeader">
+        <header class="container-fluid bg-secondary">
 
             <div class="contenedorLogo">
                 <img class="logo" src="./assets/img/aviation_logo-22.jpg" alt="Logo de Viajes Julian">
             </div>
 
-            <nav class="listaNavegacion">
+            <nav class="listaNavegacion bg-primary">
                 <!--esto es una lista desordenada de navegacion-->
                 <ul>
                     <li>
@@ -49,7 +51,7 @@
 
         </header>
         <!--aca va el contenido principal-->
-        <main>
+        <main class="container bg-danger.bg-gradient">
             <section class="seccionPrincipalIndex textoCentrado">
                 <h1>Viajes Julian</h1>
                 <h2>Los mejores viejes para tus travesias</h2>
@@ -59,23 +61,23 @@
             <section>
                 <h3>Algunas imagenes de nuestros ultimos viajes</h3>
                 <!--imagenes-->  
-            </section>
             
-
-
-
+            </section>
 
             <div class="box">
-                soy un div
+                Box 1
             </div>
-            
-                
-           
+
+            <div class="box">
+                Box 2
+            </div>
+
+
         </main>
         <!--aca van las noticias de los viajes-->
-        <section id="seccionNoticias">
+        <article id="seccionNoticias">
             <h2>Noticias sobre nuestros viajes</h2>
-            <article>
+            <section>
                 <header>
                     <h1>Titulo de la noticia</h1>
                     <p>Fecha de la noticia</p>
@@ -88,17 +90,17 @@
                     <p>Comentarios</p>
                 </footer>
 
-            </article>
-        </section>
+            </section>
+        </article>
         <!--aca van las propagandas-->
         <section>
             <h2>Volamos con las mejores aerolineas</h2>
             <aside>
                 <p></p>
                 <img src="./assets/img/aerolineas_argentinas.jpg" alt="banner de aerolineas argentinas" width="500" "
-            </aside>
+            
         </section>
-        <footer class="colorFondoPrincipal">
+        <footer class="container-fluid bg-secondary">
             <div>
                 <a href="https://www.instagram.com/" target="_blank">Instagram</a>
                 <a href="https://www.facebook.com/" target="_blank">Facebook</a>
@@ -111,6 +113,8 @@
 
 
         </footer>
+        <!--js de Bustrap-->
+        <script src="./js/bootstrap.bundle.min.js"></script>
 
         
     </body>
