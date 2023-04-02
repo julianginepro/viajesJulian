@@ -22,13 +22,12 @@ selector universal
     font-family: 'Roboto', sans-serif;
 }
 /*estilos del body*/
-body{
+body, main, header{
 
-    background-color: gray;
+    background-color: rgb(165, 215, 232);
     
 }
 main{
-    background-color: rgb(73, 137, 137);
     margin-bottom: 50px;
 
     
@@ -56,13 +55,20 @@ main{
 
 #boxPadre:hover{
     background-color: blue;
-    width: 325px;
-    height: 325px;
+    /*width: 325px;
+    height: 325px;*/
+    transform: scale(1.1);
+    box-shadow: 10px 10px rgb(69, 198, 218);
+    
+    
+    
 }
 
 #box{
     margin-left: 100px;
     margin-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
 }
 #imagenBox{
     width: 100%;
@@ -70,11 +76,6 @@ main{
     border-radius: 5%;
 }
 /*estilados del header*/
-header{
-    background-color: pink;
-    background-color: rgb(104, 3, 3);
-
-}
 
 .contenedorLogo .logo{
     width: 100px;
@@ -92,16 +93,16 @@ ul{
 .linkNavegacion{
     display: inline-block;
     text-decoration: none;
-    color: rgb(237, 39, 39);
+    color: rgb(62, 105, 237);
     font-size: 1.5rem;
 }
 /*esta clase tiene el color principal de la pagina*/
 .colorFondoPrincipal{
-    background-color:rgb(47, 98, 153);
+    background-color:rgb(6, 52, 101);
 }
 /*estilados seccion principal del index*/
 .seccionPrincipalIndex{
-    background-color: rgb(151, 158, 158);
+
     font-size: 20px;
 }
 .primerParrafo{
@@ -111,7 +112,7 @@ ul{
     
 /*estilados seccion noticias del index*/
 #seccionNoticias{
-    background-color: rgb(112, 16, 9);
+
     height: 40vh;
 }
 
@@ -136,8 +137,9 @@ ul{
     width: 500px;
 }
 
+
 a:link{
-    background-color: rgb(62, 25, 25);
+    background-color: rgb(87, 108, 188);
     color:rgba(0, 0, 0, 0.595)
 }
 a:active{
@@ -146,7 +148,18 @@ a:active{
 }
 a:hover{
     font-weight: bold;
-    padding: 9px;
+    /*padding: 9px;*/
     background-color: brown;
     color: rgb(0, 0, 0); 
 }
+
+h1{
+    background-color: blue;
+}
+
+/*@media (min-width: 767px){
+    #boxPadre{
+        display: flex;   
+    }
+
+}*/
